@@ -189,21 +189,122 @@ Earthquake data for the island of La Palma from the September 2021
 eruption is found \ldots{}
 
 
-\hypertarget{section}{%
-\section{Section}\label{section}}
+Based on data up to and including 1971, eruptions on La Palma happen
+every 79.8 years on average.
 
-This is a simple placeholder for the manuscript's main document (Knuth,
-1984).
+Studies of the magma systems feeding the volcano, such as (Marrero et
+al., 2019), have proposed that there are two main magma reservoirs
+feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth)
+which charges and in turn feeds a shallower crustal reservoir (10-20km
+depth).
 
-\begin{verbatim}
-[1] 2
-\end{verbatim}
+\hypertarget{cell-fig-timeline}{}
+\begin{figure}[H]
+
+{\centering \includegraphics{index_files/figure-pdf/fig-timeline-1.pdf}
+
+}
+
+\caption{\label{fig-timeline}Timeline of recent eruptions on La Palma
+Source:
+\href{https://mine-cetinkaya-rundel.github.io/la-palma-earthquakes/index.qmd.html}{Article
+Notebook}}
+
+\end{figure}
+
+Eight eruptions have been recorded since the late 1400s
+(Figure~\ref{fig-timeline}).
+
+Data and methods are discussed in Section~\ref{sec-data-methods}.
+
+Let \(x\) denote the number of eruptions in a year. Then, \(x\) can be
+modeled by a Poisson distribution
+
+\begin{equation}\protect\hypertarget{eq-poisson}{}{
+p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+}\label{eq-poisson}\end{equation}
+
+where \(\lambda\) is the rate of eruptions per year. Using
+Equation~\ref{eq-poisson}, the probability of an eruption in the next
+\(t\) years can be calculated.
+
+\hypertarget{tbl-history}{}
+\begin{longtable}[]{@{}ll@{}}
+\caption{\label{tbl-history}Recent historic eruptions on La
+Palma}\tabularnewline
+\toprule\noalign{}
+Name & Year \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Name & Year \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Current & 2021 \\
+Teneguía & 1971 \\
+Nambroque & 1949 \\
+El Charco & 1712 \\
+Volcán San Antonio & 1677 \\
+Volcán San Martin & 1646 \\
+Tajuya near El Paso & 1585 \\
+Montaña Quemada & 1492 \\
+\end{longtable}
+
+Table~\ref{tbl-history} summarizes the eruptions recorded since the
+colonization of the islands by Europeans in the late 1400s.
+
+\begin{figure}
+
+{\centering \includegraphics{images/la-palma-map.png}
+
+}
+
+\caption{\label{fig-map}Map of La Palma}
+
+\end{figure}
+
+La Palma is one of the west most islands in the Volcanic Archipelago of
+the Canary Islands (Figure~\ref{fig-map}).
+
+\textbf{?(caption)}
+
+\textbf{?@tbl-yearly-earthquakes} shows the yearly number of earthquakes
+on La Palma.
+
+\begin{figure}[H]
+
+{\centering \includegraphics{index_files/figure-latex/fig-spatial-plot-output-1.png}
+
+}
+
+\caption{\label{fig-spatial-plot}Locations of earthquakes on La Palma
+since 2017. Source:
+\href{https://mine-cetinkaya-rundel.github.io/la-palma-earthquakes/notebooks/data-screening.ipynb.html\#cell-fig-spatial-plot}{Data
+Screening}}
+
+\end{figure}
+
+Figure~\ref{fig-spatial-plot} shows the locations of recent earthquakes
+on La Palma.
+
+\hypertarget{sec-data-methods}{%
+\section{Data \& Methods}\label{sec-data-methods}}
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-knuth84}{}}%
-Knuth, D. E. (1984). Literate programming. \emph{Comput. J.},
-\emph{27}(2), 97--111. \url{https://doi.org/10.1093/comjnl/27.2.97}
+\leavevmode\vadjust pre{\hypertarget{ref-marrero2019}{}}%
+Marrero, J. M., García, A., Berrocoso, M., Llinares, Á.,
+Rodríguez-Losada, A., \& Ortiz, R. (2019). Strategies for the
+development of volcanic hazard maps in monogenetic volcanic fields: the
+example of La Palma (Canary Islands). \emph{Journal of Applied
+Volcanology}, \emph{8}(1).
+\url{https://doi.org/10.1186/s13617-019-0085-5}
 
 \end{CSLReferences}
 

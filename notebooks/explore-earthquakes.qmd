@@ -1,0 +1,41 @@
+---
+title: Earthquakes
+author: Mine Çetinkaya-Rundel
+---
+
+```{r}
+library(tidyverse)
+library(gt)
+la_palma <- read_csv("la-palma.csv")
+```
+
+```{r}
+#| label: tbl-yearly-earthquakes
+#| tbl-cap: Number of earthquakes per year
+
+la_palma |>
+  mutate(year = year(DateTime)) |>
+  count(year) |>
+  gt() |>
+  cols_width(everything() ~ px(150))
+```
+
+```{r}
+#| label: fig-yearly-earthquakes
+#| fig-cap: Yearly earthquakes
+#| fig-alt: Bar plot of 
+#| fig-width: 7
+#| fig-asp: 0.618
+
+la_palma |>
+  mutate(year = year(DateTime)) |>
+  count(year) |>
+  ggplot(aes(x = year, y = n)) +
+  geom_point() +
+  geom_line() +
+  theme_minimal() +
+  labs(
+    x = "Yes",
+    y = "Number of earthquakes"
+  )
+```
