@@ -115,9 +115,9 @@ La Palma is one of the west most islands in the Volcanic Archipelago of the Cana
 
 {{< embed notebooks/explore-earthquakes.qmd#tbl-yearly-earthquakes >}}
 
-@tbl-yearly-earthquakes shows the yearly number of earthquakes on La Palma.
+@tbl-yearly-earthquakes show the yearly number of earthquakes on La Palma.
 
-{{< embed/notebooks/data-screening.ipynb#fig-spatial-plot >}}
+{{< embed notebooks/data-screening.ipynb#fig-spatial-plot >}}
 
 @fig-spatial-plot shows the locations of recent earthquakes on La Palma.
 
