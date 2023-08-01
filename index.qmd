@@ -33,10 +33,86 @@ number-sections: true
 bibliography: references.bib
 ---
 
-## Section
+```{r}
+#| label: load-pkgs
 
-This is a simple placeholder for the manuscript's main document [@knuth84].
+library(tidyverse)
+```
 
 ```{r}
-1 + 1
+#| label: eruptions
+
+eruptions <- tibble(
+  year = c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
+)
+n_eruptions <- nrow(eruptions)
 ```
+
+```{r}
+#| label: avg-yrs-between-eruptions
+
+avg_years_between_eruptions <- eruptions |>
+  filter(year != 2021) |>
+  mutate(
+    year_lag = lag(year),
+    diff = year - year_lag
+  ) |>
+  summarize(avg_diff = mean(diff, na.rm = TRUE)) |>
+  pull()
+```
+
+Based on data up to and including 1971, eruptions on La Palma happen every `r round(avg_years_between_eruptions, 1)` years on average.
+
+Studies of the magma systems feeding the volcano, such as [@marrero2019], have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
+
+```{r}
+#| label: fig-timeline
+#| fig-cap: Timeline of recent eruptions on La Palma
+#| fig-alt: An event plot of the years of the last 8 eruptions on La Palma.
+#| fig-height: 1.5
+#| fig-width: 6
+
+ggplot(eruptions, aes(x = year, y = 0)) +
+  geom_text(label = "|") +
+  theme_minimal() +
+  labs(y = NULL) +
+  theme(
+    panel.grid = element_blank(),
+    axis.text.y = element_blank()
+  )
+```
+
+Eight eruptions have been recorded since the late 1400s (@fig-timeline).
+
+Data and methods are discussed in @sec-data-methods.
+
+Let $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution
+
+$$
+p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
+$$ {#eq-poisson}
+
+where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
+
+| Name                | Year |
+|---------------------|------|
+| Current             | 2021 |
+| Teneguía            | 1971 |
+| Nambroque           | 1949 |
+| El Charco           | 1712 |
+| Volcán San Antonio  | 1677 |
+| Volcán San Martin   | 1646 |
+| Tajuya near El Paso | 1585 |
+| Montaña Quemada     | 1492 |
+
+: Recent historic eruptions on La Palma {#tbl-history}
+
+@tbl-history summarizes the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.
+
+![Map of La Palma](images/la-palma-map.png){#fig-map fig-alt="Map of La Palma where La Palma is marked in red." fig-align="center"}
+
+La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map).
+
+## Data & Methods {#sec-data-methods}
+
+## References {.unnumbered}
