@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title>La Palma Earthquakes</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0002-0760-5497</contrib-id>
+          <name>
+            <surname>Purves</surname>
+            <given-names>Steve</given-names>
+          </name>
+          <string-name>Steve Purves</string-name>
+          <email>steve@curvenote.com</email>
+          <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project
+administration</role>
+          <role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <xref ref-type="aff" rid="aff-1">a</xref>
+          <xref ref-type="corresp" rid="cor-1">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0002-7859-8394</contrib-id>
+          <name>
+            <surname>Cockett</surname>
+            <given-names>Rowan</given-names>
+          </name>
+          <string-name>Rowan Cockett</string-name>
+          <xref ref-type="aff" rid="aff-1">a</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff-1">
+        <institution-wrap>
+          <institution>Curvenote</institution>
+        </institution-wrap>
+      </aff>
+      <author-notes>
+        <corresp id="cor-1">steve@curvenote.com</corresp>
+      </author-notes>
+      <history/>
+      <kwd-group kwd-group-type="author">
+        <kwd>La Palma</kwd>
+        <kwd>Earthquakes</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="section">
+      <title>Section</title>
+      <p>This is a simple placeholder for the manuscript’s main document
+  (<xref alt="Knuth 1984" rid="ref-knuth84" ref-type="bibr">Knuth
+  1984</xref>).</p>
+      <preformat>[1] 2</preformat>
+      <ref-list>
+        <ref id="ref-knuth84">
+          <element-citation publication-type="article-journal">
+            <person-group person-group-type="author">
+              <name>
+                <surname>Knuth</surname>
+                <given-names>Donald E.</given-names>
+              </name>
+            </person-group>
+            <article-title>Literate programming</article-title>
+            <source>Comput. J.</source>
+            <publisher-name>Oxford University Press, Inc.</publisher-name>
+            <publisher-loc>USA</publisher-loc>
+            <year iso-8601-date="1984-05">1984</year>
+            <month>05</month>
+            <volume>27</volume>
+            <issue>2</issue>
+            <issn>0010-4620</issn>
+            <uri>https://doi.org/10.1093/comjnl/27.2.97</uri>
+            <pub-id pub-id-type="doi">10.1093/comjnl/27.2.97</pub-id>
+            <fpage>97</fpage>
+            <lpage>111</lpage>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </sec>
+  </body>
+  <back>
+</back>
+  <sub-article article-type="notebook" id="nb-2-nb-article">
+    <front-stub>
+      <title-group>
+        <article-title>La Palma Earthquakes</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <contrib-id contrib-id-type="orcid">0000-0002-0760-5497</contrib-id>
+          <name>
+            <surname>Purves</surname>
+            <given-names>Steve</given-names>
+          </name>
+          <string-name>Steve Purves</string-name>
+          <email>steve@curvenote.com</email>
+          <role vocab="https://credit.niso.org" vocab-term="investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="https://credit.niso.org" vocab-term="project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project
+administration</role>
+          <role vocab="https://credit.niso.org" vocab-term="software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="https://credit.niso.org" vocab-term="visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
+          <xref ref-type="corresp" rid="cor-1-nb-article">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid">0000-0002-7859-8394</contrib-id>
+          <name>
+            <surname>Cockett</surname>
+            <given-names>Rowan</given-names>
+          </name>
+          <string-name>Rowan Cockett</string-name>
+          <xref ref-type="aff" rid="aff-1-nb-article">a</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff-1-nb-article">
+        <institution-wrap>
+          <institution>Curvenote</institution>
+        </institution-wrap>
+      </aff>
+      <author-notes>
+        <corresp id="cor-1-nb-article">steve@curvenote.com</corresp>
+      </author-notes>
+    </front-stub>
+    <body>
+      <sec id="section-nb-article">
+        <title>Section</title>
+        <p>This is a simple placeholder for the manuscript’s main document
+  (<xref alt="Knuth 1984" rid="ref-knuth84-nb-article" ref-type="bibr">Knuth
+  1984</xref>).</p>
+        <sec id="nb-code-cell-1-nb-article" specific-use="notebook-code">
+          <code language="r script">1 + 1</code>
+          <sec id="nb-code-cell-1-output-0-nb-article" specific-use="notebook-output">
+            <preformat>[1] 2</preformat>
+          </sec>
+        </sec>
+        <ref-list>
+          <ref id="ref-knuth84-nb-article">
+            <mixed-citation>Knuth, Donald E. 1984. “Literate Programming.”
+      <italic>Comput. J.</italic> 27 (2): 97–111.
+      <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</ext-link>.</mixed-citation>
+          </ref>
+        </ref-list>
+      </sec>
+    </body>
+    <back>
+</back>
+  </sub-article>
+</article>
