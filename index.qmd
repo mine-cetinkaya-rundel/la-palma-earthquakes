@@ -1,0 +1,33 @@
+---
+title: La Palma Earthquakes
+authors:
+  - name: Steve Purves
+    orcid: 0000-0002-0760-5497
+    corresponding: true
+    email: steve@curvenote.com
+    roles:
+      - Investigation
+      - Project administration
+      - Software
+      - Visualization
+    affiliations:
+      - Curvenote
+  - name: Rowan Cockett
+    orcid: 0000-0002-7859-8394
+    corresponding: false
+    roles: []
+    affiliations:
+      - Curvenote
+keywords: 
+  - La Palma
+  - Earthquakes
+bibliography: references.bib
+---
+
+## Section
+
+This is a simple placeholder for the manuscript's main document [@knuth84].
+
+```{r}
+1 + 1
+```
