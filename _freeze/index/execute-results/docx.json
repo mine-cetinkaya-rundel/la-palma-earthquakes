@@ -1,0 +1,16 @@
+{
+  "hash": "aee3bce81ea42621167dd9ec61df012c",
+  "result": {
+    "markdown": "---\ntitle: La Palma Earthquakes\nauthors:\n  - name: Steve Purves\n    orcid: 0000-0002-0760-5497\n    corresponding: true\n    email: steve@curvenote.com\n    roles:\n      - Investigation\n      - Project administration\n      - Software\n      - Visualization\n    affiliations:\n      - Curvenote\n  - name: Rowan Cockett\n    orcid: 0000-0002-7859-8394\n    corresponding: false\n    roles: []\n    affiliations:\n      - Curvenote\nkeywords: \n  - La Palma\n  - Earthquakes\nbibliography: references.bib\n---\n\n\n\n## Section\n\nThis is a simple placeholder for the manuscript's main document [@knuth84].\n\n\n\n::: {.cell warning.hidden='true' message.hidden='true'}\n\n```{.r .cell-code .hidden}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": null,
+    "postProcess": false
+  }
+}
