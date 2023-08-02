@@ -15,8 +15,7 @@ format:
     title-block-style: manuscript
   docx: default
   jats: default
-  agu-pdf: 
-    keep-tex: true
+  agu-pdf: default
 
 execute:
   freeze: true

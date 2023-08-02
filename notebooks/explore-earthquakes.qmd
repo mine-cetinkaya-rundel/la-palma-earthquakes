@@ -1,5 +1,5 @@
 ---
-title: Exlore Earthquakes
+title: Explore Earthquakes
 author: Mine Çetinkaya-Rundel
 ---
 
